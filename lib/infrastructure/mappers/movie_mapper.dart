@@ -17,8 +17,8 @@ class MovieMapper {
       popularity: moviedb.popularity,
       posterPath: moviedb.posterPath != ''
           ? 'https://image.tmdb.org/t/p/w500/${moviedb.posterPath}'
-          : 'no-poster',
-      releaseDate: moviedb.releaseDate,
+          : 'https://ih1.redbubble.net/image.1893341687.8294/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg',
+      releaseDate: moviedb.releaseDate ?? DateTime.now(),
       title: moviedb.title,
       video: moviedb.video,
       voteAverage: moviedb.voteAverage,
@@ -37,7 +37,7 @@ class MovieMapper {
         popularity: movieDetails.popularity,
         posterPath: movieDetails.posterPath != ''
             ? 'https://image.tmdb.org/t/p/w500/${movieDetails.posterPath}'
-            : 'no-poster',
+            : 'https://ih1.redbubble.net/image.1893341687.8294/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg',
         releaseDate: movieDetails.releaseDate,
         title: movieDetails.title,
         video: movieDetails.video,

@@ -63,4 +63,11 @@ class MoviedbDatasourceImpl extends MovieDatasource {
     final Movie movie = MovieMapper.movieDetailToEntity(movieDetails);
     return movie;
   }
+
+  @override
+  Future<List<Movie>> searchMovies(String query) async {
+    final response = await dio.get('/search/movie',
+        queryParameters: {'query': query, 'include_adult': false});
+    return _jsonToMovie(response.data);
+  }
 }

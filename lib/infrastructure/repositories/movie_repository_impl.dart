@@ -31,4 +31,9 @@ class MovieRepositoryImpl extends MovieRepositories {
   Future<Movie> getMovieById(String id) async {
     return await movieDatasource.getMovieById(id);
   }
+
+  @override
+  Future<List<Movie>> searchMovies(String query) async {
+    return await movieDatasource.searchMovies(query);
+  }
 }
