@@ -6,7 +6,7 @@ class MovieDetails {
   List<Genre> genres;
   String homepage;
   int id;
-  String imdbId;
+  String? imdbId;
   String originalLanguage;
   String originalTitle;
   String overview;
