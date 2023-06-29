@@ -44,6 +44,7 @@ class MovieScreenState extends ConsumerState<MovieScreen> {
           (context, index) => _MovieDetails(movie: movie),
         ))
       ]),
+      bottomNavigationBar: null,
     );
   }
 }

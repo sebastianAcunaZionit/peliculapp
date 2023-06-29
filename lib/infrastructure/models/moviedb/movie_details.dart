@@ -124,7 +124,7 @@ class MovieDetails {
 class BelongsToCollection {
   int id;
   String name;
-  String posterPath;
+  String? posterPath;
   String backdropPath;
 
   BelongsToCollection({
